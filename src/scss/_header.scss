@@ -1,0 +1,105 @@
+$main-font: 'Roboto Condensed', sans-serif;;
+.sb-toggle-left {
+   display: none;
+   float: left;
+   font-size: 30px;
+   letter-spacing: 1px;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   line-height: 38px;
+   border:1px solid #fff;
+   position: absolute;
+   top:13px;
+   left: 8px;
+   padding: 0;
+   margin: 0;
+   a{
+      color: #ffffff;
+      text-decoration: none;
+   }
+}
+.sb-slidebar #gnavi{
+   li{
+      padding: 20px 15px;
+   }
+}
+header{
+   height: 65px;
+   position: fixed;
+   width: 100%;
+   z-index: 1000;
+   background: rgba(00,00,00,0.8);
+   /*border: 1px solid #ff0000;*/
+   #logo{
+      margin-top:14px;
+      padding-left: 10px;
+      width: 106px;
+      img{
+         width: 106px;
+      }
+   }
+   #header-inner{
+      max-width: 930px;
+      margin: auto;
+      position: relative;
+      nav{
+         width:570px;
+         /*width:418px;*/
+         position: absolute;
+         text-align: right;
+         font-family: $main-font !important;
+         top:8px;
+         right:0px;
+         li{
+            float: left;
+            margin: 0 16px;
+            letter-spacing: 1.3px;
+            position: relative;
+            display: inline-block;
+            padding: .0em 0em .3em;
+            text-decoration: none;
+            font-size: 15px;
+            &::after{
+               content: '';
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               width: 100%;
+               height: 1px;
+               transform: scaleX(0);
+               background-color: #fff;
+               transition: all .3s ease;
+            }
+            &:hover{
+                &::after {
+                  transform: scaleX(1);
+                }
+            }
+         }
+         li.active{
+            a{
+               color:#a3a3a3 !important;
+            }
+         }
+      }
+   }
+}
+@media screen and(max-width:768px){
+   .sb-toggle-left {
+      display: block;
+   }
+   header{
+      #logo{
+         margin:16px auto 0;
+      }
+      #header-inner{
+         nav{
+            display: none;
+         }
+      }
+   }
+}
+@media screen and(max-width:480px){
+
+}

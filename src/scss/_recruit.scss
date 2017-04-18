@@ -1,0 +1,100 @@
+$main-font: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+.img-hiring{
+   width:82%;
+   margin: auto;
+}
+.recruit-upperarea{
+   @include clearfix;
+   background:#3d3d3d;
+   .recruit-upperarea-inner{
+      padding-top: 40px;
+      max-width: 800px;
+      margin:auto;
+      padding-bottom: 40px;
+      h2{
+         font-size: 27px;
+         margin-bottom:15px;
+         font-family:$main-font;
+         font-weight: normal;
+      }
+      p{
+         line-height: 200%;
+         margin-bottom: 10px;
+         font-size: 12px;
+      }
+      ul{
+         margin: auto;
+         li{
+            max-width: 31%;
+            width: 31%;
+            margin-right: 8px;
+            margin-top: 14px;
+         }
+         li:last-child{
+            margin-right: 0px;
+         }
+      }
+   }
+}
+.qualifications-area{
+   margin-top: 30px;
+   padding: 20px 20px;
+   background: #313131;
+   h2{
+      margin-bottom: 14px;
+      font-family:$main-font;
+      font-weight: normal;
+   }
+}
+@media screen and(max-width:768px){
+   .recruit-upperarea{
+      .recruit-upperarea-inner{
+         padding:20px;
+         ul{
+            margin: auto;
+            li{
+               max-width: 30%;
+               width: 30%;
+               margin-right: 8px;
+               margin-top: 14px;
+            }
+            li:last-child{
+               margin-right: 0px;
+            }
+         }
+      }
+      .leftbox{
+         width: 100%;
+         padding-bottom: 0px;
+         float: none;
+         .leftbox--inner{
+            padding:40px 30px 40px;
+         }
+      }
+      .rightbox{
+         width: 100%;
+         float: none;
+      }
+   }
+}
+@media screen and(max-width:480px){
+   .img-hiring{
+      width:100%;
+      margin: auto;
+   }
+   .recruit-upperarea{
+      .recruit-upperarea-inner{
+         h2{
+            font-size: 18px;
+            margin-bottom:13px;
+            font-weight: normal;
+         }
+      }
+      .leftbox{
+         padding-bottom: 0px;
+         .leftbox--inner{
+            padding:34px 14px 34px;
+         }
+      }
+   }
+}

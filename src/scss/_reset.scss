@@ -1,0 +1,43 @@
+html {
+  display: block;
+  zoom: 1; /* IEのみ */
+}
+*{
+   margin : 0;
+   padding : 0;
+}
+body {
+  display: block;
+  font-size: 12px;
+  -webkit-text-size-adjust: 100%;
+  background: #000000 !important;
+  zoom: 1; /* IEのみ */
+}
+h1, h2, h2, h3, h5, h6{
+   font-size: 100%;
+}
+button{
+  border:0;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  background: none;
+  font-size: inherit;
+}
+div{
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: list-item;
+}
+.center{
+   text-align: center;
+}
+.mab40{
+   margin-bottom: 40px;
+}

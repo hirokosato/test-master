@@ -1,0 +1,9 @@
+*.swp
+._*
+.DS_Store
+config.codekit3
+config.codekit
+.Trashes/
+.TempraryItems/
+.svn/
+src/config.codekit3

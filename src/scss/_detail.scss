@@ -1,0 +1,96 @@
+$main-font:'Lato', sans-serif;
+$number-font:'Open Sans', sans-serif;
+
+@media screen and(max-width:768px){
+
+}
+@media screen and(max-width:480px){
+   .vjs-default-skin .vjs-big-play-button{
+      top: 34% !important;
+      left: 36% !important;
+      font-size: 2em !important;
+   }
+   .menu-detail,
+   .manual-detail{
+      .main-visual{
+         width:100%;
+         float: none;
+      }
+      .main-date span:nth-child(even){
+         font-size: 13px;
+      }
+      .main-date{
+         width:100%;
+         font-size: 13px;
+         margin-top: 20px;
+         margin-bottom: 0px;
+      }
+      .menu-flow{
+         width:100%;
+         font-size: 13px;
+         margin-right:3%;
+         margin-bottom: 30px;
+         float: none;
+         /*div{
+            margin-bottom:16px ;
+         }*/
+         .flow-num{
+            margin-top: 2px;
+         }
+      }
+      .voice-icon{
+         display: none;
+      }
+      .menu-name{
+         font-size:16px;
+         margin-bottom: 17px;
+         font-weight: bold;
+         text-align: center;
+         letter-spacing: 2px;
+      }
+      .menu-flow-wrap{
+         margin-bottom: 0px;
+      }
+      #voicepoint{
+         width:100%;
+         margin-bottom: 4px;
+         font-weight: bold;
+         p{
+            padding-top: 0%;
+            padding-left: 12px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            font-size: 14px;
+         }
+         i{
+            margin-top: -6px;
+            margin-right: 2px;
+            font-size: 16px;
+            letter-spacing: 1px;
+         }
+         br{
+            display: none;
+         }
+      }
+      #voicepoint-text{
+         clear: both;
+         float: none;
+         width: 90%;
+         font-size: 13px;
+         padding: 14px 5%;
+         .voicepoint-text-box{
+            width:100%;
+            float:none;
+         }
+         .manual-num{
+            margin-bottom: 20px;
+            line-height: 150%;
+         }
+         .border-width{
+            width: 100%;
+            float: right;
+         }
+      }
+   }
+
+}

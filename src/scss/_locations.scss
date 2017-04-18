@@ -1,0 +1,496 @@
+$main-font: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+.btn-newopen{
+   width: 99.8%;
+   background: #b80000;
+   color:#fff;
+   border: none;
+   b{
+      font-size: 20px !important;
+      line-height: 190%;
+   }
+}
+#map-wrap{
+   margin-top: 50px;
+   padding:0 0 50px;
+}
+#mapArea{
+   max-width:100%;
+   height:500px;
+   margin-bottom: 40px;
+   background: #676767;
+}
+#map-mark{
+   text-align: center;
+   margin-bottom:30px;
+   font-size: 12px;
+   img{
+      width:250px;
+      margin: auto;
+      display: block;
+      margin-bottom: 14px;
+   }
+}
+.icon-white{
+   background: #a9a9a9;
+   color: #000;
+   border-radius: 2px;
+   display: block;
+   font-weight: 10px;
+   margin:0 auto 4px;
+   width: 80%;
+   line-height: 130%;
+   font-family: $main-font;
+}
+.gmap-box{
+   color: #000;
+   a{
+      color: #000 !important;
+      text-decoration: underline;
+      font-weight: bold;
+   }
+}
+.area-search{
+   ul{
+      margin-bottom: 13px;
+      margin-top: 10px;
+      @include clearfix;
+   }
+   li{
+      float: left;
+      width: 19.7%;
+      background: #333333;
+      margin-right:0.3%;
+      text-align: center;
+      padding:14px 0;
+      font-family:$main-font;
+      cursor: pointer;
+   }
+   .on{
+      color: #000;
+   }
+   /*a{
+      display: block;
+      width: 100%;
+      letter-spacing: 1px;
+   }*/
+}
+.area-search-map{
+   width: 96%;
+   margin:0 auto 14px;
+   position: relative;
+   img{
+      display: block;
+      width: 100%;
+   }
+   .west{
+      width: 13%;
+      left: 9.6%;
+      top:33%;
+      position: absolute;
+   }
+   .midwest{
+      width: 24%;
+      left:38%;
+      top:28%;
+      position: absolute;
+   }
+   .south{
+      width: 17%;
+      left:52%;
+      top:65%;
+      position: absolute;
+   }
+   .northeast{
+      width: 17%;
+      right:0.2%;
+      top:17%;
+      position: absolute;
+   }
+   .other{
+      width: 20%;
+      left:4%;
+      bottom:7%;
+      position: absolute;
+   }
+}
+.near-restaurant{
+   clear:both;
+   h1{
+      margin-bottom:24px;
+      font-size:15px;
+   }
+   table{
+      border:none;
+      font-family:normal;
+      width: 100%;
+      tr.bg-color-title{
+         td{
+            background:#535353 !important;
+         }
+      }
+      tr.bg-color-none{
+         td{
+            background:#333333 !important;
+         }
+      }
+      a{
+         text-decoration: underline;
+      }
+      td{
+         background:#222222;
+         border-top:none;
+         border-right:1px solid #222222;
+         border-bottom:1px solid #222222;
+         border-left:none;
+         padding:10px 20px;
+         font-size:12px;
+         a{
+            font-size:12px;
+         }
+         span.fl{
+            float: left;
+         }
+         span.fr{
+            float: right;
+         }
+      }
+      td.tel {
+      }
+
+   }
+}
+#new-open-area{
+   @include clearfix;
+   margin-bottom: 40px;
+   h1{
+      font-size: 16px;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom:1px solid #fff;
+      font-family:$main-font;
+      font-weight: normal !important;
+   }
+   .new-open-area-box{
+      width: 22%;
+      padding: 1.5%;
+      float: left;
+   }
+}
+#shoplist-area{
+   clear: both;
+   .category-name{
+      font-size: 16px;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom:1px solid #fff;
+      font-family:$main-font;
+      font-weight: normal !important;
+   }
+   .express-name{
+      font-size: 11px;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      font-family:$main-font;
+      display: block;
+      text-align: center;
+      width: 180px;
+      padding: 5px;
+      background:#ffffff;
+      font-weight: bold;
+      color:#000000 !important;
+   }
+   .country{
+      clear: both;
+      margin-bottom: 20px;
+      color: #ff1200;
+      letter-spacing: 1px;
+      font-family:$main-font;
+   }
+   dl{
+      clear: both;
+      margin-bottom: 50px;
+      @include clearfix;
+   }
+   dt{
+      font-size: 16px;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom:1px solid #fff;
+      font-family:$main-font;
+   }
+   dd,
+   .international-btn{
+      margin-bottom: 20px;
+      font-size: 12px;
+      min-height: 40px;
+      letter-spacing:1px;
+      width:22%;
+      margin-right: 30px;
+      border: 1px solid #fff;
+      float: left;
+      text-align: center;
+      a{
+         padding:  14px 0;
+         display: block;
+      }
+   }
+   .international-btn:last-child{
+      margin-bottom: 50px !important;
+   }
+   dd:nth-of-type(4n),
+   div.international-btn:nth-of-type(4n){
+      margin-right: 0px;
+   }
+   .international-box{
+      @include clearfix;
+   }
+}
+.shoplist{
+   border-top: 1px solid #737373;
+   margin-top: 22px;
+   padding-top:0px;
+   padding-bottom: 17px;
+   clear: both;
+   z-index: 1;
+   .opening-area{
+      text-align: center;
+      background: #d31a1a;
+      padding: 10px 0;
+      margin-bottom: 20px;
+   }
+   #shoplist-map{
+      width:447px;
+      height:410px;
+      margin-right: 35px;
+      float: left;
+   }
+   .shop-text{
+      max-width:400px;
+      float: left;
+      font-size:13px !important;
+      h2,h3{
+         text-align: left!important;
+      }
+      h3{
+         margin-top: 10px;
+      }
+      i{
+         font-size: 18px;
+         margin-top: 1px;
+      }
+      h2{
+         font-size:14px !important;
+         line-height: 150%;
+         margin-top: -7px;
+         b{
+            display: block;
+            color: #ff0000 !important;
+         }
+      }
+      h3{
+         margin-bottom: 24px;
+      }
+      ul{
+         line-height: 210%;
+         margin-bottom: 20px;
+         font-size: 12px;
+      }
+      .list-access{
+         border-top:1px solid #474747;
+         padding-top: 10px;
+         margin-top: 10px;
+      }
+      .btn-delivery{
+         text-align: center;
+         letter-spacing: 0px;
+         font-size: 13px;
+         width: 100%;
+         margin-bottom: 10px;
+         background: #f97242;
+         a{
+            padding: 5px 2px;
+            display: block;
+         }
+      }
+      .btn-viewmenu,
+      .btn-facebook,
+      .btn-insta{
+         text-align: center;
+         letter-spacing: 0px;
+         float: left;
+         font-size: 13px;
+         width: 32%;
+         a{
+            padding: 5px 2px;
+            display: block;
+         }
+      }
+      .btn-viewmenu{
+         background:#cc0000;
+         margin-right:2%;
+         a:hover {
+            background:#ee1d1d;
+         }
+      }
+      .btn-facebook{
+         background:#4c66a4;
+         margin-right: 2%;
+         a:hover {
+            background:#1b45aa;
+         }
+      }
+      .btn-insta{
+         background:#99654f;
+         a:hover {
+            background:#a87a60;
+         }
+      }
+   }
+}
+.shoplist:after{
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0; 
+  clear: both; 
+  visibility:hidden;
+}
+@media screen and(max-width:900px){
+   #new-open-area{
+      .new-open-area-box{
+         width: 50%;
+      }
+   }
+   #mapArea{
+      height:377px;
+   }
+   .shoplist{
+      margin-top: 4px;
+      padding-top: 24px;
+      padding-bottom: 0px;
+      #shoplist-map{
+         width:100%;
+         height:500px;
+         margin-right: 0px;
+         margin-bottom:25px;
+         float:none;
+      }
+      .shop-text{
+         max-width:100% !important;
+         float: none;
+      }
+   }
+   #shoplist-area{
+      margin:0 10px;
+      .category-name{
+         text-align: center !important;
+      }
+      dl{
+         margin-bottom: 30px;
+         clear: both;
+         @include clearfix;
+      }
+      dt,
+      .country{
+         text-align: center;
+         font-size: 18px;
+         font-weight: bold;
+         margin-bottom: 15px;
+         padding-bottom: 15px;
+         border-bottom:1px solid #fff;
+         letter-spacing: 1px;
+      }
+      dd,
+      .international-btn{
+         width:49%;
+         margin-right: 0px;
+         float: none !important;
+      }
+      dd:nth-child(odd){
+         float: right !important;
+         margin-right: 0px;
+      }
+      dd:nth-child(even){
+         margin-right: 0px;
+         float: left !important;
+      }
+      dd:nth-child(5n){
+         margin-right: 0px;
+      }
+   }
+}
+@media screen and(max-width:480px){
+   #map-mark{
+      img{
+         width:205px !important;
+      }
+   }
+   #mapArea{
+      height:277px;
+   }
+   .area-search{
+      li{
+         font-size: 11px;
+      }
+      a{
+         padding:12px 0;
+      }
+   }
+   .near-restaurant{
+      table{
+         td{
+            background:#222222;
+            border-top:none;
+            border-right:1px solid #222222;
+            border-bottom:1px solid #222222;
+            border-left:none;
+            padding:4px 4px;
+            font-size:11px;
+         }
+         td.near-restaurant-title{
+            text-align: center;
+            font-size: 18px;
+            padding: 0px 0px 14px;
+            font-family:$main-font;
+            background: none !important;
+            letter-spacing: 1px;
+         }
+      }
+   }
+   .shoplist{
+      #shoplist-map{
+         width:100%;
+         height:300px;
+      }
+   }
+   #shoplist-area{
+      .express-name{
+         margin:0 auto 30px;
+      }
+      dl{
+         margin-bottom: 30px;
+         clear: both;
+         @include clearfix;
+      }
+      dt{
+         text-align: center;
+         font-size: 24px;
+         font-weight: bold;
+         margin-bottom: 15px;
+         padding-bottom: 15px;
+         border-bottom:1px solid #fff;
+         letter-spacing: 1px;
+      }
+      dd,
+      dd:nth-child(3n),
+      .international-btn{
+         width:100%;
+         margin-right: 0px;
+         margin-bottom: 14px;
+      }
+      dd:nth-child(5n){
+         margin-right: 0px;
+      }
+   }
+}
